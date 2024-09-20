@@ -6,22 +6,73 @@
   width: fit-content;
 
   svg {
-    fill: v.$purple_mid;
-    stroke: v.$purple_dark;
-    stroke-width: 2;
     width: 14px;
     height: 14px;
     transform: rotate(-15deg);
+
+    &.blue {
+      fill: v.$blue_mid;
+    }
+
+    &.green {
+      fill: v.$green_mid;
+    }
+
+    &.purple {
+      fill: v.$purple_mid;
+    }
+
+    &.pink {
+      fill: v.$pink_mid;
+    }
+
+    &.orange {
+      fill: v.$orange_mid;
+    }
+
+    &.mustard {
+      fill: v.$mustard_mid;
+    }
   }
 
   &-text {
-    background-color: v.$purple_mid;
-    border: solid 2px v.$purple_dark;
+    border: solid 2px;
     border-radius: 1.5px 18.5px 18.5px 18.5px;
     color: v.$beige;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 20px;
     margin-left: 0.75rem;
     padding: 0.375rem 0.75rem;
+
+    &.blue {
+      background-color: v.$blue_mid;
+      border-color: v.$blue_dark;
+    }
+
+    &.green {
+      background-color: v.$green_mid;
+      border-color: v.$green_dark;
+    }
+
+    &.purple {
+      background-color: v.$purple_mid;
+      border-color: v.$purple_dark;
+    }
+
+    &.pink {
+      background-color: v.$pink_mid;
+      border-color: v.$pink_dark;
+    }
+
+    &.orange {
+      background-color: v.$orange_mid;
+      border-color: v.$orange_dark;
+    }
+
+    &.mustard {
+      background-color: v.$mustard_mid;
+      border-color: v.$mustard_dark;
+    }
   }
 }
