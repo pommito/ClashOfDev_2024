@@ -76,3 +76,17 @@
     }
   }
 }
+
+.Reversed {
+  align-items: flex-end;
+
+  svg {
+    transform: rotate(60deg);
+  }
+
+  .Cursor-text {
+    border-radius: 18.5px 1.5px 18.5px 18.5px;
+    margin-left: 0rem;
+    margin-right: 0.75rem;
+  }
+}

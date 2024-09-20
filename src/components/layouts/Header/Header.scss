@@ -1,0 +1,54 @@
+@use '/src/styles/variables' as v;
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  margin-top: 20px;
+
+  &-logo {
+    background-color: v.$black;
+    border-radius: 5rem;
+    color: v.$beige;
+    font-size: v.$text-size;
+    font-weight: 700;
+    line-height: 14.5px;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    transform: rotate(8deg);
+  }
+
+  &-pourcentage {
+    font-size: v.$text-size;
+    font-weight: 700;
+  }
+
+  &-button {
+    position: relative;
+    background-color: v.$black;
+    border: solid 2px v.$black;
+    border-radius: 5rem;
+    cursor: pointer;
+    height: 30px;
+    width: 4.5rem;
+
+    &-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: v.$beige;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 1.5rem;
+      width: 1.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &.dark {
+        left: calc(100% - 1.5rem);
+      }
+    }
+  }
+}
