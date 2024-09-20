@@ -1,7 +1,8 @@
+import Cursor from '../utils/Cursor/Cursor';
 import './App.scss';
 
 function App() {
-  return <div className="App">App</div>;
+  return <Cursor />;
 }
 
 export default App;
