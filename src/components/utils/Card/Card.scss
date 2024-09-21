@@ -4,10 +4,11 @@
   border-radius: 3.75rem;
   height: 90dvh;
   margin: 0 2rem;
-  margin-top: 10vh;
-  padding: 2.5rem;
-  position: relative;
   overflow: hidden;
+  padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   &-infos {
     display: flex;

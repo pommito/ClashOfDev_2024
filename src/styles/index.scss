@@ -10,6 +10,6 @@ html,
 body {
   background-color: v.$beige;
   font-family: v.$font;
-  min-height: 200vh;
-  overflow-x: hidden;
+  height: 100%;
+  overflow: hidden;
 }

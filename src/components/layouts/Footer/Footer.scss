@@ -1,0 +1,103 @@
+@use '../../../styles/variables' as v;
+
+.Footer {
+  color: v.$beige;
+  height: auto;
+  margin: 0 2rem;
+
+  &-card {
+    background-color: v.$black;
+    border-radius: 3.75rem;
+    height: 100dvh;
+    padding: 5.5rem;
+
+    h2 {
+      font-size: 115px;
+      font-weight: 600;
+      margin-bottom: 10rem;
+      text-align: justify;
+      padding-right: 2rem;
+
+      img {
+        transform: translate(150%, 50%);
+      }
+    }
+
+    h3 {
+      font-size: v.$text-size;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 8rem;
+      margin-bottom: 4rem;
+    }
+
+    &-cta {
+      position: relative;
+      width: 220px;
+      margin: auto;
+      padding: 14px 0 19px 7px;
+
+      button {
+        border-radius: 5rem;
+        border: none;
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 22px 10px;
+        width: 200px;
+        z-index: 2;
+      }
+
+      .blue,
+      .pink,
+      .green {
+        position: absolute;
+      }
+
+      .blue {
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        transform: translateX(-50%);
+      }
+
+      .green {
+        top: 0;
+        left: 0;
+        z-index: 3;
+      }
+
+      .pink {
+        top: 0;
+        right: 0;
+        z-index: 0;
+        transform: translate(25%, -35%);
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+
+    &-logo {
+      background-color: v.$black;
+      border-radius: 5rem;
+      color: v.$beige;
+      font-size: v.$text-size;
+      font-weight: 700;
+      line-height: 14.5px;
+      padding: 0.5rem 0.75rem;
+      text-transform: uppercase;
+      transform: rotate(8deg);
+    }
+
+    &-pourcentage,
+    &-date {
+      color: v.$black;
+      font-size: v.$text-size;
+      font-weight: 700;
+    }
+  }
+}
