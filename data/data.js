@@ -22,10 +22,6 @@ const cards = [
         pseudo: '@maislina_',
         isReversed: false,
       },
-      {
-        pseudo: '@toto',
-        isReversed: false,
-      },
     ],
     illustration: designImage,
     p1: '<b>Le design</b>, c’est son terrain de jeu. Il maîtrise et retranscrit correctement chaque pixel de la maquette.',

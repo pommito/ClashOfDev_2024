@@ -13,3 +13,8 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+h2 {
+  font-size: clamp(69px, 8vw, 115px);
+  font-weight: 600;
+}

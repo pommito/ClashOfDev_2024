@@ -3,7 +3,6 @@
 .Card {
   border-radius: 3.75rem;
   height: 90dvh;
-  margin: 0 2rem;
   overflow: hidden;
   padding: 2.5rem;
   position: sticky;
@@ -49,7 +48,7 @@
 
     &-image {
       max-height: 700px;
-      height: 100%;
+      width: 75%;
     }
 
     &-text {
@@ -72,6 +71,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    width: clamp(180px, 20vw, 410px);
+    height: clamp(180px, 20vw, 410px);
   }
 
   &.blue {
@@ -96,5 +97,46 @@
 
   &.mustard {
     background-color: v.$mustard_light;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card {
+    &-infos {
+      height: 12.5%;
+      position: relative;
+
+      &-category {
+        margin-left: 0;
+      }
+
+      &-reviewers {
+        flex-direction: column;
+        position: absolute;
+        top: 100;
+        right: 0;
+        transform: translateY(50px);
+      }
+    }
+
+    &-content {
+      flex-direction: column;
+      gap: 20px;
+      height: 75%;
+
+      &-image {
+        width: 100%;
+      }
+
+      &-text {
+        margin-top: 0;
+        width: 100%;
+      }
+    }
+
+    &-sticker {
+      width: 180px;
+      height: 180px;
+    }
   }
 }

@@ -11,11 +11,9 @@ const Hero = () => {
     <section className="Hero">
       <div className="Hero-content">
         <h2 className="Hero-content-subtitle">
-          Que le plus fort, <br />{' '}
-          <span>
-            <img src={subtitleLogo}></img>
-          </span>{' '}
-          <em>l'emporte</em>
+          Que le <img className="mobile" src={subtitleLogo} alt="Logo clash of devs" /> plus fort,{' '}
+          <img className="desktop" src={subtitleLogo} alt="Logo clash of devs" />
+          <em>l'emporte !</em>
         </h2>
         <div className="Hero-content-visual">
           <img src={card} alt="the card of clash of devs" className="Hero-content-visual-card" />

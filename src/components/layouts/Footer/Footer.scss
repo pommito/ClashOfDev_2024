@@ -3,7 +3,6 @@
 .Footer {
   color: v.$beige;
   height: auto;
-  margin: 0 2rem;
 
   &-card {
     background-color: v.$black;
@@ -12,8 +11,7 @@
     padding: 5.5rem;
 
     h2 {
-      font-size: 115px;
-      font-weight: 600;
+      font-size: clamp(40px, 8vw, 115px);
       margin-bottom: 10rem;
       text-align: justify;
       padding-right: 2rem;
@@ -79,6 +77,7 @@
   &-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px 0 20px 0;
 
     &-logo {
@@ -98,6 +97,27 @@
       color: v.$black;
       font-size: v.$text-size;
       font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    &-card {
+      height: 90dvh;
+      padding: 3rem;
+
+      h2 {
+        padding-right: 0;
+        img {
+          transform: translate(50%, -400%);
+        }
+      }
+
+      h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 8rem;
+      }
     }
   }
 }

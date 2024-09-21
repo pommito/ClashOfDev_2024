@@ -2,7 +2,9 @@
 
 .App {
   height: 100vh;
+  width: 100vw;
   overflow-y: auto;
+  padding: 0 2rem;
 
   .Card-container {
     position: relative;
@@ -29,5 +31,11 @@
     > :nth-child(7) {
       z-index: 7;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0 0.75rem;
   }
 }
