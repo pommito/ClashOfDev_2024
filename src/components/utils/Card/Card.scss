@@ -1,0 +1,74 @@
+@use '../../../styles/variables' as v;
+
+.Card {
+  background-color: v.$purple_light;
+  border-radius: 3.75rem;
+  height: 90dvh;
+  margin: 0 2rem;
+  margin-top: 10vh;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &-infos {
+    display: flex;
+    height: 10%;
+
+    &-category {
+      display: flex;
+      flex-direction: column;
+      gap: 0.33rem;
+      margin-left: 3rem;
+      width: 155px;
+    }
+
+    h3 {
+      font-size: v.$text-size;
+      font-weight: 700;
+      width: 250px;
+      text-transform: uppercase;
+    }
+
+    h4,
+    h5 {
+      font-size: v.$text-size;
+      font-weight: 500;
+    }
+
+    &-reviewers {
+      margin-left: auto;
+    }
+  }
+
+  &-content {
+    height: 90%;
+    display: flex;
+    gap: 20px;
+
+    &-image {
+      max-height: 700px;
+      height: 100%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 25px;
+      width: 250px;
+
+      p {
+        font-size: v.$text-size;
+        font-weight: 500;
+        opacity: 60%;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &-sticker {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
