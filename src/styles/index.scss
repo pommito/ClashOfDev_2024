@@ -5,4 +5,7 @@ body {
   background-color: v.$beige;
   padding-inline: 2rem;
   font-family: v.$font;
+  min-height: 200vh;
+  width: 100vw;
+  overflow-x: hidden;
 }

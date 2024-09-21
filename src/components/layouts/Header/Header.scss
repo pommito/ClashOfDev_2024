@@ -2,10 +2,14 @@
 
 .Header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 2.5rem;
-  margin-top: 20px;
+  width: calc(100% - 4rem);
+  position: fixed;
+  top: 20px;
+  left: 0;
+  padding: 0 2rem;
 
   &-logo {
     background-color: v.$black;
@@ -25,7 +29,6 @@
   }
 
   &-button {
-    position: relative;
     background-color: v.$black;
     border: solid 2px v.$black;
     border-radius: 5rem;
