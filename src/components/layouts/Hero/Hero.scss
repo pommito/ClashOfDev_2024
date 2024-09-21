@@ -1,0 +1,70 @@
+@use '/src/styles/variables' as v;
+
+.Hero {
+  height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin-top: 200px;
+
+    &-subtitle {
+      font-size: 115px;
+      font-weight: 600;
+    }
+
+    &-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 30%;
+
+      &-card {
+      }
+
+      &-logo {
+        position: absolute;
+        top: 18px;
+        right: 27px;
+      }
+
+      & .Cursor.blue,
+      & .Cursor.orange,
+      & .Cursor.pink {
+        position: absolute;
+      }
+
+      & .Cursor.blue {
+        bottom: 0;
+        right: 0;
+      }
+
+      & .Cursor.orange {
+        bottom: 40%;
+        right: 0;
+      }
+
+      & .Cursor.pink {
+        bottom: 15%;
+        left: 0;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 13.5rem;
+    line-height: 174px;
+    white-space: nowrap;
+    margin-top: 160px;
+    margin-bottom: 0;
+  }
+}
