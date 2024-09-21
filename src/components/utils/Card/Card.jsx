@@ -2,36 +2,35 @@ import './Card.scss';
 
 import Cursor from '../Cursor/Cursor';
 
-import stickerDesign from '../../../assets/stickerDesign.svg';
-import image from '../../../assets/design.png';
+const Card = ({ card }) => {
+  console.log(card);
 
-const Card = () => {
   return (
-    <section className="Card">
+    <section className={`Card ${card.color}`}>
       <div className="Card-infos">
         <div className="Card-infos-category">
-          <h4>DESIGN</h4>
-          <h5>/6 pts</h5>
+          <h4>{card.category}</h4>
+          <h5>{card.notation}</h5>
         </div>
-        <h3>L'artiste de renom</h3>
+        <h3>{card.title}</h3>
         <div className="Card-infos-reviewers">
-          <Cursor color="purple" pseudo="@maislina_" isReversed={false} />
+          {card.cursors.map((cursor) => (
+            <Cursor color={card.color} pseudo={cursor.pseudo} isReversed={cursor.isReversed} key={cursor.pseudo} />
+          ))}
         </div>
       </div>
       <div className="Card-content">
-        <img className="Card-content-image" src={image} alt="Illsutration de la catégorie design" />
+        <img
+          className="Card-content-image"
+          src={card.illustration}
+          alt={`illustration de la catégorie ${card.category}`}
+        />
         <div className="Card-content-text">
-          <p>
-            <b>Le design</b>, c’est son terrain de jeu. Il maîtrise et retranscrit correctement chaque pixel de la
-            maquette.
-          </p>
-          <p>
-            Virtuose des couleurs il ne se trompe jamais de code HEX, de spacing ou de border-radius ;{' '}
-            <b>Figma n’a aucun secret pour ce Dev de talent</b>.
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: card.p1 }}></p>
+          <p dangerouslySetInnerHTML={{ __html: card.p2 }}></p>
         </div>
       </div>
-      <img className="Card-sticker" src={stickerDesign} alt="sticker de la catégorie design" />
+      <img className="Card-sticker" src={card.sticker} alt="sticker de la catégorie design" />
     </section>
   );
 };

@@ -1,7 +1,6 @@
 @use '../../../styles/variables' as v;
 
 .Card {
-  background-color: v.$purple_light;
   border-radius: 3.75rem;
   height: 90dvh;
   margin: 0 2rem;
@@ -36,6 +35,8 @@
     }
 
     &-reviewers {
+      display: flex;
+      gap: 20px;
       margin-left: auto;
     }
   }
@@ -70,5 +71,29 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  &.blue {
+    background-color: v.$blue_light;
+  }
+
+  &.green {
+    background-color: v.$green_light;
+  }
+
+  &.purple {
+    background-color: v.$purple_light;
+  }
+
+  &.pink {
+    background-color: v.$pink_light;
+  }
+
+  &.orange {
+    background-color: v.$orange_light;
+  }
+
+  &.mustard {
+    background-color: v.$mustard_light;
   }
 }
