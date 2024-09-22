@@ -1,0 +1,11 @@
+@use '../../../styles/variables' as v;
+
+.ProgressBar {
+  background-color: v.$black;
+  width: 0;
+  height: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}

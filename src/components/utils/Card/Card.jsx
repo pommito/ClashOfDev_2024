@@ -3,8 +3,6 @@ import './Card.scss';
 import Cursor from '../Cursor/Cursor';
 
 const Card = ({ card }) => {
-  console.log(card);
-
   return (
     <section className={`Card ${card.color}`}>
       <div className="Card-infos">
