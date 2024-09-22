@@ -16,7 +16,14 @@
     margin-top: 12.5vh;
 
     &-subtitle {
-      width: 65%;
+      overflow-y: hidden;
+
+      span {
+        display: inline-block;
+        transform: translateY(100%);
+        animation: slideInUp 0.75s ease-in-out forwards;
+        animation-delay: 150ms;
+      }
 
       .mobile {
         display: none;
@@ -97,5 +104,14 @@
         width: 100%;
       }
     }
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

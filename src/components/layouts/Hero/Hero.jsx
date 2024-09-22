@@ -11,12 +11,14 @@ const Hero = () => {
   useEffect(() => {
     const animateCursors = () => {
       cursorsRef.current.forEach((cursor, index) => {
+        console.log(index);
+
         if (cursor) {
           // Vérification de sécurité
-          const speed = 1 + index * 0.1;
+          const speed = 0.5 + index * 0.1;
           const angle = Date.now() * 0.001 * speed;
           const x = Math.sin(angle) * 20;
-          const y = Math.cos(angle) * 10;
+          const y = Math.cos(angle) * 20;
 
           cursor.style.transform = `translate(-${x}px, ${y}px)`;
         }
@@ -32,9 +34,11 @@ const Hero = () => {
     <section className="Hero">
       <div className="Hero-content">
         <h2 className="Hero-content-subtitle">
-          Que le <img className="mobile" src={subtitleLogo} alt="Logo clash of devs" /> plus fort,{' '}
-          <img className="desktop" src={subtitleLogo} alt="Logo clash of devs" />
-          <em> l'emporte !</em>
+          <span>
+            Que le <img className="mobile" src={subtitleLogo} alt="Logo clash of devs" /> plus fort,
+            <br /> <img className="desktop" src={subtitleLogo} alt="Logo clash of devs" />
+            <em> l'emporte !</em>
+          </span>
         </h2>
         <div className="Hero-content-visual">
           <img src={card} alt="the card of clash of devs" className="Hero-content-visual-card" />
