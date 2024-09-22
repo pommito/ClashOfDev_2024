@@ -1,4 +1,5 @@
 @use '/src/styles/variables' as v;
+@use '../../../styles/themes' as *;
 
 .Header {
   display: flex;
@@ -11,9 +12,9 @@
   z-index: 9999;
 
   &-logo {
-    background-color: v.$black;
+    background-color: var(--reversedBg);
     border-radius: 5rem;
-    color: v.$beige;
+    color: var(--reversedColor);
     font-size: v.$text-size;
     font-weight: 700;
     line-height: 14.5px;
@@ -25,12 +26,12 @@
   &-pourcentage {
     font-size: v.$text-size;
     font-weight: 700;
-    color: v.$black;
+    color: var(--color);
   }
 
   &-button {
-    background-color: v.$black;
-    border: solid 2px v.$black;
+    background-color: var(--reversedBg);
+    border: solid 2px var(--reversedBg);
     border-radius: 5rem;
     cursor: pointer;
     height: 30px;
@@ -49,6 +50,7 @@
 
       &.dark {
         transform: translateX(0);
+        border: solid 2px v.$black;
       }
     }
   }

@@ -1,11 +1,13 @@
 @use '../../../styles/variables' as v;
+@use '../../../styles/themes' as *;
 
 .Footer {
-  color: v.$beige;
+  color: var(--color);
   height: auto;
 
   &-card {
-    background-color: v.$black;
+    background-color: var(--reversedBg);
+    color: var(--reversedColor);
     border-radius: 3.75rem;
     height: 100dvh;
     padding: 5.5rem;
@@ -36,6 +38,8 @@
       padding: 14px 0 19px 7px;
 
       button {
+        background-color: var(--background-color);
+        color: var(--color);
         border-radius: 5rem;
         border: none;
         position: relative;
@@ -81,9 +85,9 @@
     padding: 40px 0 20px 0;
 
     &-logo {
-      background-color: v.$black;
+      background-color: var(--reversedBg);
       border-radius: 5rem;
-      color: v.$beige;
+      color: var(--reversedColor);
       font-size: v.$text-size;
       font-weight: 700;
       line-height: 14.5px;
@@ -94,7 +98,7 @@
 
     &-pourcentage,
     &-date {
-      color: v.$black;
+      color: var(--color);
       font-size: v.$text-size;
       font-weight: 700;
     }
