@@ -1,24 +1,20 @@
 import './Header.scss';
 
 import image from '../../../assets/toggleButton.svg';
-import { useState } from 'react';
+import { useTheme } from '../../../hooks/useTheme';
 
 const Header = ({ scrollProgress }) => {
-  const [isThemeLight, setIsThemeLight] = useState(true);
+  const { isDarkMode, toggleDarkMode } = useTheme();
 
   const scrollPourcent = Math.round(scrollProgress);
-
-  const handleThemeSwitch = () => {
-    setIsThemeLight(!isThemeLight);
-  };
 
   return (
     <header className="Header">
       <div className="Header-logo">La piscine</div>
       <div className="Header-pourcentage">{`${scrollPourcent} %`}</div>
 
-      <button className="Header-button" onClick={handleThemeSwitch}>
-        <div className={`Header-button-toggle ${isThemeLight ? '' : 'dark'}`}>
+      <button className="Header-button" onClick={toggleDarkMode}>
+        <div className={`Header-button-toggle ${isDarkMode ? 'dark' : ''}`}>
           <img src={image} alt="" />
         </div>
       </button>

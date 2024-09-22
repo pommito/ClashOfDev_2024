@@ -1,15 +1,15 @@
-import designImage from '../src/assets/design.png';
-import designSticker from '../src/assets/stickerDesign.svg';
-import codeImage from '../src/assets/code.png';
-import codeSticker from '../src/assets/stickerCode.svg';
-import motionImage from '../src/assets/motion.png';
-import motionSticker from '../src/assets/stickerMotion.svg';
-import responsivImage from '../src/assets/responsiv.png';
-import responsivSticker from '../src/assets/stickerResponsiv.svg';
-import easterEggImage from '../src/assets/easterEgg.png';
-import easterEggSticker from '../src/assets/stickerEasterEgg.svg';
-import bigBossImage from '../src/assets/bigboss.png';
-import bigBossSticker from '../src/assets/stickerBigBoss.svg';
+import designImage from '../assets/design.png';
+import designSticker from '../assets/stickerDesign.svg';
+import codeImage from '../assets/code.png';
+import codeSticker from '../assets/stickerCode.svg';
+import motionImage from '../assets/motion.png';
+import motionSticker from '../assets/stickerMotion.svg';
+import responsivImage from '../assets/responsiv.png';
+import responsivSticker from '../assets/stickerResponsiv.svg';
+import easterEggImage from '../assets/easterEgg.png';
+import easterEggSticker from '../assets/stickerEasterEgg.svg';
+import bigBossImage from '../assets/bigboss.png';
+import bigBossSticker from '../assets/stickerBigBoss.svg';
 
 const cards = [
   {

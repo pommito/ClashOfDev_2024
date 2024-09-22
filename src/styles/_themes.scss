@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+html[data-theme='dark'] {
+  --background-color: #{$black};
+  --color: #{$beige};
+
+  --reversedBg: #{$beige};
+  --reversedColor: #{$black};
+}
+
+html[data-theme='light'] {
+  --background-color: #{$beige};
+  --color: #{$black};
+
+  --reversedBg: #{$black};
+  --reversedColor: #{$beige};
+}
