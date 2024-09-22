@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   height: 2.5rem;
-  width: calc(100% - 4rem);
-  position: fixed;
+  width: 100%;
+  position: sticky;
   top: 20px;
   z-index: 9999;
 
@@ -25,6 +25,7 @@
   &-pourcentage {
     font-size: v.$text-size;
     font-weight: 700;
+    color: v.$black;
   }
 
   &-button {
