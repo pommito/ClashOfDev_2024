@@ -1,8 +1,13 @@
-# React + Vite
+# Clash of Dev 👾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my participation for the event Clash of Dev organize by @maislina\_
 
-Currently, two official plugins are available:
+You can check the project live <a href="https://clashofdev.victorlebecq.fr">here</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### To run the project on local
+
+```bash
+pnpm i
+
+pnpm run dev
+```
